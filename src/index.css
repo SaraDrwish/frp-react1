@@ -1,0 +1,59 @@
+ @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Merriweather+Sans:wght@300;400;500;600&family=Mukta+Mahee:wght@600;700;800&family=Open+Sans:wght@300&family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@1,100;1,300;1,700&family=Rubik:wght@300;400;500&display=swap');
+ 
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: 'Caveat', cursive;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-family: 'Mukta Mahee', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Quicksand', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Rubik', sans-serif;
+
+}
+/* @font-face {
+  font-family: myFirstFont;
+    src: url(./assets/Caveat.zip);
+  font-weight: bold;
+} */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* nav page */
+
+nav{
+  display: flex;
+  justify-content: center;
+  background-color: thistle;
+  width: 100%;
+  height: 50px;
+}
+nav .logo{
+  width: 20%;
+  justify-content: flex-start;
+}
+nav a {
+  justify-content: flex-end;
+  width: 70%;
+  list-style: none;
+  text-decoration: none;
+  color: blueviolet;
+  font-size: 22px;
+  margin: 0 1%;
+}
+nav a:hover {
+  text-decoration: none;
+  color: aqua;
+}
+nav a:focus{
+  color: burlywood;
+  font-size: 25px;
+}
+
+/* ---------------------------end nav page */
+
