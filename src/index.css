@@ -29,14 +29,29 @@ a , a:hover{
 
 /* start header page */
 
+.home{
+    /* padding: 0% 4%; */
+    background-image: url(../src/assets/img/r10.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+}
+
+
 .HeaderNav {
   display: flex;
   align-items: center;
-  /* background-color: rgb(170, 61, 170); */
+  /* background-color: var(--color7verylightpink);
+    */
+    background-color: var(--color6pinkdark);
   width: 100%;
-  height: 111px;
-  padding: 0% 4%;
+  height: 88px;
+  padding: 0% 6%;
+  position: fixed;
+  top: 0;
+  z-index: 11111;
 }
+
 .left-h{
   flex: 1;
   /* background-color: rgb(98, 83, 62); */
@@ -156,7 +171,9 @@ height: 100%;
   border-color: var(--color2otng) ;
  } */
 
-.HeaderNav button {
+
+
+  .btn {
      padding: 2% 4%;
      border: none;
      outline: none;
@@ -179,7 +196,7 @@ height: 100%;
      overflow: hidden;
      z-index: 1;
 }
-.HeaderNav button::after {
+  .btn::after {
  content: " ";
  position: absolute;
  z-index: -1;
@@ -194,12 +211,14 @@ height: 100%;
  -ms-transition:all 0.3s ease ;
  -o-transition:all 0.3s ease ;
 }
- .HeaderNav button:hover::after{
+ .btn:hover::after{
   width: 11rem;
  }
- .HeaderNav button:hover{
+ .btn:hover{
   color: var(--color5orngdark);
  }
+
+
  
 /* ---------------------------end header page  -------------------------------------------------------------------------*/
 
@@ -209,7 +228,7 @@ height: 100%;
 
 
 .homeContent{
-padding: 8% 0;
+padding: 6%;
 display: flex;
 /* justify-content: space-between; */
 gap: 1rem;
@@ -217,19 +236,85 @@ gap: 1rem;
 
 .homeContent .left-homCont{
   flex: 1;
+  color: var(--color1pink);
+  text-transform: capitalize;
 }
 .homeContent .left-homCont h4 {
-border: 1px solid var(--color1pink) ;
-padding: 1%;
-color: var(--color3pinklight);
-text-transform: capitalize;
-width: 55%;
-
-  background-image: linear-gradient(to right, var(--color1pink), var(--color2otng) );
-  opacity: 70%;
-font-size: 1.2rem;
-/* font-weight: bold; */
+   border: 1px solid var(--color1pink) ;
+   padding: 2% ;
+   color: var(--color3pinklight);
+   transform: capitalize;
+   width: 62%;
+   margin-bottom: 4%;
+   border-radius: 1.2rem;
+   background-image: linear-gradient(to right, var(--color1pink), var(--color2otng) );
+   opacity: 70%;
+   font-size: 1.2rem;
+   -webkit-border-radius: 1.2rem;
+   -moz-border-radius: 1.2rem;
+   -ms-border-radius: 1.2rem;
+   -o-border-radius: 1.2rem;
 }
+
+.homeContent .left-homCont > :nth-child(3){
+  color: var(--color2otng);
+  padding: 1% 0;
+}
+.homeContent .left-homCont span{
+  color: var(--color4ornglight);
+  display: flex;
+  flex-direction: column;
+  padding: 1% 0;
+}
+.homeContent .left-homCont button {
+  margin: 2% 0;
+  background-color: transparent;
+  padding: 1% 0;
+  /*font-size: 2rem;
+  */border: none;
+  outline: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 25%;
+}
+
+ .homeContent .left-homCont button span{
+  color: var(--color2otng);
+  cursor: pointer;
+ }
+.homeContent .left-homCont button .svg{
+  display: flex;
+  /* border: 2px solid var(--color2otng); */
+  border: 2px solid var(--color1pink);
+  border-radius: 5rem;
+  padding: 0.25rem;
+  -webkit-border-radius: 5rem;
+  -moz-border-radius: 5rem;
+  -ms-border-radius: 5rem;
+  -o-border-radius: 5rem;
+  /* fill: var(--color2otng); */
+  fill: var(--color1pink);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+ .homeContent .left-homCont button:hover span,
+ .homeContent .left-homCont button:hover .svg {
+   color: var(--color3pinklight);
+   border-color: var(--color1pink);
+   fill: var(--color3pinklight);
+ }
+
+/* .homeContent .left-homCont button .svg:hover{
+  border-color: var(--color1pink);
+  fill: var(--color1pink);
+} */
+
 
 .homeContent .right-homCont{
   flex: 1;
@@ -275,7 +360,22 @@ font-size: 1.2rem;
 /* -------------------------------- start skills */
 
 
+.skills{
+  background-color: var(--color6pinkdark);
+  text-align: center;
+  width: 100%;
+  height: 20vh;
+  position: relative;
+}
 
+.skills .skills-container{
+  background-color: var(--color3pinklight);
+  width: 60%;
+  /* margin: auto; */
+  position: absolute;
+  top: -5%;
+  left: 20%;
+}
 
 
 

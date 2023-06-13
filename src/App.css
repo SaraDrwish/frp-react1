@@ -10,29 +10,39 @@
 }
 
  .App{
-        background-image: url(./assets/img/r10.jpg);
+        /* background-image: url(./assets/img/r10.jpg); */
         background-repeat: no-repeat;
          background-size: cover;
          color: bisque;
-         padding: 0% 4%;
   }
 
 
-.mostly-customized-scrollbar::-webkit-scrollbar {
-    width: 5px;
-    height: 8px;
-    background-color: var(--color1pink);
- }
- .mostly-customized-scrollbar::-webkit-scrollbar-thumb {
+::-webkit-scrollbar {
+    width: 0.4rem;
+    height: 0.2rem;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 0.1rem var(--color7verylightpink);
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+::-webkit-scrollbar-thumb {
+    background:  var(--color1pink);
+    border-radius: 0.2rem;
+    -webkit-border-radius: 0.2rem;
+    -moz-border-radius: 0.2rem;
+    -ms-border-radius: 0.2rem;
+    -o-border-radius: 0.2rem;
+}
+::-webkit-scrollbar-thumb:hover {
     background: var(--color2otng);
 }
 
-::-moz-selection {
-   background:var(--color1pink);
-        }
-    
 ::selection {
-     background: var(--color1pink);
+     background: var(--color7verylightpink);
         }
     
 .blur {

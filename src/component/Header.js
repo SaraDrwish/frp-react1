@@ -39,7 +39,7 @@ const Header = () => {
                     </a>
                 </div>
 
-                    <button onClick= {() => x("/contact")} > Let's Contact  </button>
+                    <button className="btn"  onClick= {() => x("/contact")} > Let's Contact  </button>
                 </div>
             </nav>
             
