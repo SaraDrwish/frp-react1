@@ -1,17 +1,50 @@
+
+:root {
+    --color1pink: rgb(248, 163, 208);
+    --color2otng: rgb(255, 163, 107);
+    --color3pinklight: rgb(248, 16, 140);
+    --color4ornglight: rgb(255, 108, 16);
+    --color5orngdark: rgb(102, 76, 60);
+    --color6pinkdark: rgb(129, 86, 109);
+    --color7verylightpink: rgba(255, 206, 232, 0.2);
+}
+
  .App{
-
-    background-image: url(./assets/img/r10.jpg);
+        background-image: url(./assets/img/r10.jpg);
         background-repeat: no-repeat;
-        /* background-position: center; */
-        background-size: cover;
-        /* height: 100vh; */
-        color: bisque;
-        padding: 1%;
+         background-size: cover;
+         color: bisque;
+         padding: 0% 4%;
+  }
+
+
+.mostly-customized-scrollbar::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+    background-color: var(--color1pink);
  }
+ .mostly-customized-scrollbar::-webkit-scrollbar-thumb {
+    background: var(--color2otng);
+}
 
-
- 
-
-
-
+::-moz-selection {
+   background:var(--color1pink);
+        }
+    
+::selection {
+     background: var(--color1pink);
+        }
+    
+.blur {
+            background: var(--color3pinklight);
+             position: absolute;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            z-index: -11;
+            filter: blur(180px);
+            -webkit-filter: blur(180px);
+        }
  
