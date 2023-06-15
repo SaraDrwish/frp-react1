@@ -2,22 +2,55 @@ import React from "react";
 // import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from "./Header";
 import img1 from "../assets/img/star.png"
+import TypeWriterEffect from 'react-typewriter-effect';
 
 
 const Home = () => {
 
+
   return (
 
     <div className="home"> 
+    
       <Header />
       
       <div className="homeContent">
 
         <div className="left-homCont">
+
           <h4>Hello every body this is My portofolio </h4>
-          <h2>Hi I am Sara Darwish </h2>
-          <h2>Front End Devoloper</h2>
-          <span>I have experinace in the web development among 3 years </span>
+
+          < h2 > Hi I'm Sara Darwish
+            
+            <span className="text-wrterEff" > 
+
+                    <TypeWriterEffect
+                        textStyle={{
+                          color: 'rgb(255, 108, 16)',
+                          display:'inline',
+                          // padding: '0.4rem',
+                          marginTop:'0.6rem',
+                          // fontSize: '4rem',
+                        }}
+                        startDelay={1000}
+                        cursorColor="rgb(255, 108, 16)"
+                        multiText={[
+                          'Front End Developer',
+                          'Back End Developer',
+                          'Full Stack Developer',
+                          ]}
+                        loop={true}
+                        multiTextLoop={true}
+                        nextTextDelay={1000}
+                        typeSpeed={50}
+                />
+              
+              </span>
+
+          </h2>
+          
+          <span>I have experinace in the web development among 3 years </span>    
+
           <button   > 
             <span>Let's Contact </span>
             <a href="#" className="svg">
