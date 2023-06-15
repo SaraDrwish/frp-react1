@@ -10,6 +10,7 @@ import Skills from './component/Skills';
 import Projects from './component/Projects';
 import ReactProject from './component/ReactProject.js';
 import JsProject from './component/JsProject';
+import Footer from "./component/Footer";
 
 
 
@@ -26,7 +27,8 @@ function App() {
                       <Skills /> 
                       <Projects />
                       
-                      <Contact />  
+                    <Contact />  
+                    <Footer/>
         
                     <Routes>
                         {/* <Route path="/logo" element={ <Logo/> } /> */}
