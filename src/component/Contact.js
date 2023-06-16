@@ -1,12 +1,16 @@
 import React from "react";
+// import leftContact from "../assets/img/r6.jpg"
+// import leftContact from "../assets/img/r1.jpg"
+// import leftContact from "../assets/img/4.jpeg"
+import leftContact from "../assets/img/sa.jpg"
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Alert from 'react-bootstrap/Alert';
+// import Alert from 'react-bootstrap/Alert';
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import Row from 'react-bootstrap/Row';
-
+// import Container from "react-bootstrap/Container"
 // import { useNavigate } from "react-router-dom";
 
 const Contact = () => {
@@ -14,35 +18,62 @@ const Contact = () => {
     // const x = useNavigate();
     return (
 
-
          
             <div className="contact py-3 d-flex justify-content-center align-items-center ">
             {/* <h2>contact</h2> */}
       {/* ------------------------------ */}
 
+            <div className="top-form"> 
+                
+                <div className="left-top-cont">
+                    <img  src={leftContact} />
+                </div>
 
-            <Form>
-                <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Label>Email address</Form.Label>
-                    <Form.Control type="email" placeholder="Enter email" />
-                    <Form.Text className="text-muted">
-                    We'll never share your email with anyone else.
-                    </Form.Text>
-                </Form.Group>
+                <div className="right-top-cont">
 
-                <Form.Group className="mb-3" controlId="formBasicPassword">
-                    <Form.Label>Password</Form.Label>
-                    <Form.Control type="password" placeholder="Password" />
-                </Form.Group>
-                <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                    <Form.Check type="checkbox" label="Check me out" />
-                </Form.Group>
-                <Button variant="primary" type="submit">
-                    Submit
-                </Button>
-                </Form>
-            
+                    <h2 className="mb-4">Contact me </h2>
+                    {/* <Form.Label>Example textarea</Form.Label> */}
+                    
+                {/* <Container> */}
+                    <Form>
+                       <Row className="row">
+                                <Col className="col">
+                                    <Form.Group size="sm" className="mb-2 " controlId="exampleForm.ControlTextarea1">
+                                        <Form.Control type="text" placeholder="first name" />
+                                    </Form.Group>
+                                </Col>
+                                <Col>
+                                    <Form.Group size="sm" className="mb-2  "  controlId="exampleForm.ControlTextarea1">
+                                        <Form.Control type="text" placeholder="last name" />
+                                    </Form.Group>
+                            </Col>
+                       </Row>
 
+                   <Row className="row" >
+                       <Col>
+                            <Form.Group  size="sm" className="mb-2" controlId="exampleForm.ControlTextarea1">
+                                <Form.Control type="email" placeholder="Enter email" />
+                            </Form.Group>
+                        </Col>
+                         <Col>
+                            <Form.Group  size="sm" className="mb-2" controlId="formBasicNumber">
+                                <Form.Control type="text" data-validation="number" placeholder="phone num" />
+                            </Form.Group>
+                         </Col>
+                       </Row>
+                        <Form.Group size="sm" className="mb-2" controlId="exampleForm.ControlTextarea1">
+                            <Form.Control as="textarea" rows={3} />
+                        </Form.Group>
+                           <Button className="btn my-3" type="submit">
+                            Send
+                            </Button>
+                    </Form>
+                {/* </Container> */}
+
+                    </div>
+                
+            </div>  {/**end top-form */}
+        
             {/* ------------------------------ */}
 
 
