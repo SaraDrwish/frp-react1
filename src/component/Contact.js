@@ -1,8 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 // import leftContact from "../assets/img/r6.jpg"
-// import leftContact from "../assets/img/r1.jpg"
+import leftContact from "../assets/img/r1.jpg"
 // import leftContact from "../assets/img/4.jpeg"
-import leftContact from "../assets/img/sa.jpg"
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import Alert from 'react-bootstrap/Alert';
 import Button from 'react-bootstrap/Button';
@@ -64,9 +64,9 @@ const Contact = () => {
                         <Form.Group size="sm" className="mb-2" controlId="exampleForm.ControlTextarea1">
                             <Form.Control as="textarea" rows={3} />
                         </Form.Group>
-                           <Button className="btn my-3" type="submit">
-                            Send
-                            </Button>
+                         {/* <Link to="/src/component/Contact.js" > */}
+                            <Button className="btn my-3" type="submit" style={ {color:"rgb(102, 76, 60)"} }> </Button>
+                          {/* </Link> */}
                     </Form>
                 {/* </Container> */}
 

@@ -9,52 +9,38 @@ import Contact from './component/Contact.js';
 import Skills from './component/Skills';
 import Projects from './component/Projects';
 import ReactProject from './component/ReactProject.js';
-import JsProject from './component/JsProject';
+// import JsProject from './component/JsProject';
 import Footer from "./component/Footer";
-
-
 
 function App() {
 
   return (
-    
     <div className='App' >
-   
             <Router>
-
-                    {/* <Header /> */}
-                      <Home/>   
-                      <Skills /> 
-                      <Projects />
-                      
-                    <Contact />  
-                    <Footer/>
+                      <Home path="/home"  />   
+                      <Skills path="/skills"  />                      
+                      <Projects />                          
+                      <Contact />  
+                      <Footer />     
         
-                    <Routes>
-                        {/* <Route path="/logo" element={ <Logo/> } /> */}
-           
+
+                  <Routes>
                         {/* <Route path="/home" element={ <Home/> }  />  */}
                         {/* <Route path="/header" element={ <Header/> }  />  */}
-                        {/* <Route path="/skills" element={ <Skills/> }  />  */}
-                        {/* <Route path="/contact" element={<Contact />} />  */}
-                       
-                 
-                       {/* <Route path="/projects" element={<Projects />} target="_blank" >           
-                           <Route path="ReactProject" element={ <ReactProject/>} />
-                            <Route path="JsProject" element={<JsProject />} />
-                      </Route>
-                        */}
+                        {/* <Route path="/skills" element={ <Skills/> }  />  */}          
+          
+                        {/* <Route path="/projects" element={<Projects />} target="_blank" >           
+                              <Route path="ReactProject" element={ <ReactProject/>} />
+                              <Route path="JsProject" element={<JsProject />} />
+                        </Route> */}
+          
                          {/* <Route path="*" element={<h2> the page is not found  </h2>} />  */}
-                         {/* <Route path="/" element={ <h2>Main Bage</h2>}  />  */}
-
-                </Routes>
-                
+                        <Route path="/" element={ <h2>Main Bage</h2>}  /> 
+                  </Routes>
+        
                 {/* </BrowserRouter> */}
-                
             </Router>
-
     </div>
-
 
   );
 

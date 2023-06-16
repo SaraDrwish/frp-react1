@@ -29,7 +29,6 @@ const Header = () => {
        }
     window.addEventListener("scroll", HeaderNavbar)
     
-
         return (
 
             <nav className={HeaderNav ? "HeaderNav active" : "HeaderNav"}  >
@@ -64,10 +63,9 @@ const Header = () => {
                 {/* // <div className={active ? "HeaderRebonsivNav" : "right-h"} onClick={() => { */}
                     {/* // setActive(true) */}
                 {/* // }}> */}
-                    
-                    <NavLink onClick={()=>setMenueOpen(false) } to="/home"   smooth={true} span={true}  >Home</NavLink>
-                    <NavLink onClick={()=>setMenueOpen(false) } to="/projects"  smooth={true} span={true} >Projects</NavLink>
-                    <NavLink onClick={()=>setMenueOpen(false) } to="/skills" smooth={true} span={true} >Skills</NavLink>
+                    <NavLink onClick={()=>setMenueOpen(false) } to="home"  smooth={true} span={true} className="homeActive" >Home</NavLink>
+                    <NavLink  to="projects" onClick={()=>setMenueOpen(false) } smooth={true} span={true} >Projects</NavLink>
+                    <NavLink onClick={()=>setMenueOpen(false) }  smooth={true} span={true} to="skills" >Skills</NavLink>
                     {/* <Link to="/contact" >Contact Me</Link> */}
                     <div className="right-icons">
 
@@ -89,8 +87,9 @@ const Header = () => {
                             </a>
                         </div>  {/* {end circlSoical } */}
 
-                            <span onClick={()=>setMenueOpen(false) } smooth={true} span={true}  >
-                       <button  className="btn" onClick={() => x("/contact") } > Let's Contact  </button></span>
+                            <Link onClick={()=>setMenueOpen(false) } smooth={true} span={true} to="./Contact.js" >
+                                <button className="btn" onClick={() => x("/contact")} > Let's Contact  </button>
+                            </Link>
 
                     </div>   {/* {end right-icons  } */}
 
