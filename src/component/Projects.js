@@ -7,6 +7,7 @@ import ReactProject from './ReactProject.js';
 const Projects = () => {
 
     return (
+
         <div className="Projects">
             
             <h2> Projects </h2>
@@ -16,14 +17,14 @@ const Projects = () => {
                 <Link to="ReactProject">react projs</Link>
                 <Link to="JsProject"> js projs</Link>
                 <Link to="PasicProject"> HTML & CSS projs</Link>
-            </nav>
+              </nav>
 
-            
             <Outlet />
             
             <ReactProject />
 
-         </div>
+        </div>
+        
     )
 
 }

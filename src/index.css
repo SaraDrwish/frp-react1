@@ -21,6 +21,7 @@ body {
   --color5orngdark: rgb(102, 76, 60);
   --color6pinkdark:rgb(129, 86, 109) ;
   --color7verylightpink: rgba(255, 206, 232, 0.2 );
+  --color8verylightorng: rgba(255, 210, 182, 0.8);
 }
  
 
@@ -315,7 +316,6 @@ gap: 1rem;
   font-size: 4rem;
 }
 
-
 .homeContent .left-homCont > :nth-child(3){
   color: var(--color2otng);
   padding: 1% 0;
@@ -422,32 +422,30 @@ gap: 1rem;
 
 
 .skills{
-  background-color: var(--color6pinkdark);
+  /* background-color: var(--color2otng); */
+  background-color: var(--color8verylightorng);
   text-align: center;
   width: 100%;
-  height: 20vh;
   position: relative;
+  left: 0;
+  right: 0;
+  height: 100%;
   margin-bottom: 16%;
-
 }
 .skills .skills-container h2{
   font-size: 3rem;
   padding: 1%;
-  /* background-color: antiquewhite; */
 }
 .skills .skills-container p{
   font-size: 1.2rem;
-  /* font-weight: bold; */
   color: var(--color5orngdark);
-  /* padding: 1%; */
-  /* background-color: rebeccapurple; */
 }
 .skills .skills-container{
-  background-color: var(--color2otng);
+  background-color: var(--color6pinkdark);
   width: 80%;
   margin: auto;
   position: absolute;
-  top: 50%;
+  top: 4rem;
   left: 50%;
   transform: translate(-50% , -50%);
   border-radius:2rem ;
@@ -466,27 +464,114 @@ gap: 1rem;
   -ms-transform: translate(-50% , -50%);
   -o-transform: translate(-50% , -50%);
 }
+.skills .skills-top{
+  /* background-color: rgb(140, 114, 165); */
+  width: 50%;
+}
+.skills .skills-btm{
+  background-color: var(--color6pinkdark);
+    display: flex;
+  width: 80%;
+  padding: 2%;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.skills .skills-btm .circleBigBox{
+  display: flex;
+  flex-direction: column;
+}
+.skills .skills-btm .circleBigBox text {
+  font-size: 1.4rem;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 500;
+  padding: 6% 0%;
+}
+.skills .skills-btm .outer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8.8rem;
+  height: 8.8rem;
+  margin: auto;
+  /* padding: 1%; */
+  border-radius: 50% ;
+  /* box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+  6px 6px 10px -1px rgba(255,255,255,0.7) ;
+  -webkit-border-radius: 50% ;
+  -moz-border-radius: 50% ;
+  -ms-border-radius: 50% ;
+  -o-border-radius: 50% ; */
+  position: relative;
+    background-color: var(--color7verylightpink);
+}
+.skills .skills-btm .inner{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background-color: var(--color6pinkdark);
+  /* box-shadow: inset 6px 10px -1px rgba(0, 0, 0, 0.2), 
+  inset 6px 6px 10px -1px rgba(255, 255, 255, 0.7) ,
+   -0.6px -0.6px 0px -1px rgba(0, 0, 0, .51), 
+   0.6px  0.6px 0px -1px rgba(0, 0, 0, .51), 
+    0px 10px 10px -10px rgba(0, 0, 0, .51) ; */
 
+  /* box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),6px 6px 10px -1px rgba(255, 255, 255, 0.7); */
+
+}
+.skills .skills-btm circle{
+  fill: none;
+  stroke: url(#gradient);
+    /* stroke: var(--color2otng); */
+  stroke-width: 20px;
+  stroke-dasharray: 470;
+  stroke-dashoffset: 200;
+}
+.skills .skills-btm #number{
+font-size: 2rem;
+font-weight: 500;
+color: var(--color2otng);
+}
+.skills .skills-btm .svgcricl{
+  position: absolute;
+  left: 0%;
+  top: 0;
+}
+.skills .skills-btm svg{
+  /* background-color: rgba(181, 141, 126, 0.875); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .skills .circlSkills{
   fill: none;
   color: linear-gradient(  var(--color1pink), var(--color2otng));
   background: linear-gradient(to right, var(--color1pink), var(--color2otng));
   stroke: var(--color3pinklight);
   /* stroke: linear-gradient(  var(--color6pinkdark), var(--color5orngdark)); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.skills .arro{
+  font-size: 2rem;
+  fill: var(--color1pink);
+  cursor: pointer;
 }
 .skills .progcirclSkills{
-  stroke-dasharray: 222px;
+  stroke-dasharray: 400;
+  stroke-dashoffset: 100;
   /* stroke: var(--color4ornglight); */
     stroke: url(#gradient);
  stroke-linecap: round;
  stroke-linejoin: round;
   /* -webkit-text-stroke-color:linear-gradient( var(--color1pink), var(--color2otng)); */
   fill: none;
-
- 
 }
-
-
 
 
 
@@ -513,7 +598,6 @@ background-color: blue;
 
 
 
-
 /* -------------------------------- end skills */
 
 
@@ -524,7 +608,9 @@ display: flex;
 flex-direction: column;
 align-items: center;
 padding: 1%;
-}
+margin: 22% 0% 0 0;
+/* background-color: var(--color7verylightpink); */
+  background-color: var(--color8verylightorng);}
 .Projects h2 { 
 padding: 1%;
  }

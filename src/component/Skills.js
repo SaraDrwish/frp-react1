@@ -1,12 +1,79 @@
-import React from "react";
-// import
-import Carousel from 'react-bootstrap/Carousel';
+import React, { useState } from "react";
+// import Carousel from 'react-bootstrap/Carousel';
+import { motion } from 'framer-motion';
+
 
 const Skills = () => {
 
+    const [selected, setSelected] = useState(0);
+    
+    // const crclProgress =  ;
+    
+    const transition = {type:"spring" , duration:3}
+
+
     return (
+
         <div className="skills">
             <span> </span>
+
+
+{/* --------------------- */}
+
+  
+{/*                 
+              <motion.span                 
+                  key={selected}
+                  initial={{ opacity: 0, x: -100 }}
+                  transition={{ transition, duration: 2 }}
+                  exit={{ opacity: 0, x: 100 }}
+                  whileInView={{ opacity: 1, x: 0 }}   >              
+                  {crclProgress[selected].review}
+              </motion.span>
+ 
+          <div className="right-testi">
+              <motion.div
+                  initial={{ opacity: 0, x: -100 }}
+                  transition={{ transition, duration: 2 }}
+                  whileInView={{opacity:1 ,x:0} }
+              ></motion.div>
+
+              <motion.div
+                 initial={{ opacity: 0, x: 100 }}
+                  transition={{ transition, duration: 2 }}
+                  whileInView={{opacity:1 ,x:0} }
+              ></motion.div>
+
+              <motion.img  
+                  key={selected}
+                  initial={{ opacity: 0, x: 100 }}
+                  transition={{ transition, duration: 2 }}
+                  exit={{ opacity: 0, x: -100 }}
+                  whileInView={{opacity:1 ,x:0} }     
+                  src={crclProgress[selected].img} alt="tstimg" />
+              <div className="arros">
+                  <svg
+                      onClick={() => {
+                      selected === 0 ? setSelected( crclProgress - 1) : setSelected( (prv) => prv-1)
+                        } }
+                      xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512" className="arro">
+                        <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" />
+                     </svg>
+                  <svg  
+                      onClick={() => {
+                          selected === crclProgress - 1 ? setSelected(0) :  setSelected( (prv) => prv+1)
+                               } }                 
+                      xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512" className="arro" >
+                        <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                    </svg>
+
+                 </div>
+
+            </div> */}
+            
+            {/**end arros */}
+
+       
             
             <div className="skills-container">
 
@@ -15,59 +82,70 @@ const Skills = () => {
                     <p>You can see my skills here</p>
                 </div> {/** end skills-top  */}
                
-
                 <div className="skills-btm">
 
-                  {/* <Carousel className="Carousel">
-                        <Carousel.Item className="CarouselItem">
-                            <Carousel.Caption className="CarouselItemCabt">
-                                <h3>First slide label</h3>
-                            </Carousel.Caption>
-                       </Carousel.Item>
-                        <Carousel.Item className="CarouselItem" >
-                                <h3>Second slide label</h3>
-                        </Carousel.Item>
-                    </Carousel> */}
+                     {/* <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512" className="arro">
+                        <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" />
+                    </svg> */}
+                    
 
-                    <defs>
-                        <linearGradient id="gradient">
-                            <stop  offset="80%" stop-color="rgb(255, 163, 107)" />
-                            <stop  offset="20%" stop-color="rgb(248, 163, 208)" />
-                            {/* <stop  offset="30%" stop-color="rgb(255, 108, 16)" />
-                            <stop  offset="20%" stop-color="rgb(248, 16, 140)" /> */}
-                        </linearGradient>
-                    </defs>
-                    <svg height="150" width="150"  >
-                        <circle  className="circlSkills" cx="60" cy="60" r="50" stroke="flex" stroke-width="11" />
-                        <circle className="progcirclSkills" cx="60" cy="60" r="50" stroke="flex" stroke-width="11" />
+                    {/* <svg height="300" width="300"  >
+                        <circle  className="circlSkills" cx="80" cy="80" r="70" stroke="flex" stroke-width="18" />
+                        <circle className="progcirclSkills" cx="70" cy="70" r="60" stroke="flex" stroke-width="15" />
+                     </svg>
+                     <svg height="300" width="300"  >
+                        <circle  className="circlSkills" cx="80" cy="80" r="70" stroke="flex" stroke-width="18" />
+                        <circle className="progcirclSkills" cx="70" cy="70" r="60" stroke="flex" stroke-width="15" />
+                     </svg>
+                     <svg height="300" width="300"  >
+                        <circle  className="circlSkills" cx="80" cy="80" r="70" stroke="flex" stroke-width="18" />
+                        <circle className="progcirclSkills" cx="70" cy="70" r="60" stroke="flex" stroke-width="15" />
+                    </svg> */}
+
+                     {/* <svg height="200" width="200"  >
+                        <circle  className="circlSkills" cx="70" cy="70" r="60" stroke="flex" stroke-width="15" />
+                        <circle className="progcirclSkills" cx="70" cy="70" r="60" stroke="flex" stroke-width="15" />
                         <text x="50%" y="50%" dy="0.2rem" textAnchor="middle" className="skills-text-prog" fill="#gradient">50%</text>
-                    </svg>
-                    <svg height="150" width="150">
-                       
-                        <circle className="circlSkills" cx="60" cy="60" r="50" stroke="flex" stroke-width="11" />
-                        <circle className="progcirclSkills" cx="60" cy="60" r="50" stroke="flex" stroke-width="11" />
-                        <text x="50%" y="50%" dy="0.2rem" textAnchor="middle" className="skills-text-prog">90%</text>
+                    </svg> */}
 
-                    </svg>
-                    <svg height="150" width="150">
-                        <circle className="circlSkills" cx="60" cy="60" r="50" stroke="flex" stroke-width="11" />
-                        <circle className="progcirclSkills" cx="60" cy="60" r="50" stroke="flex" stroke-width="11" />
-                        <text x="50%" y="50%" dy="0.2rem" textAnchor="middle" className="skills-text-prog">40%</text>
-
-                    </svg>
-                    <svg height="150" width="150">
-                        <circle className="circlSkills" cx="60" cy="60" r="50" stroke="flex" stroke-width="11" />
-                        <circle className="progcirclSkills" cx="60" cy="60" r="50" stroke="flex" stroke-width="11" />
-                        <text x="50%" y="50%" dy="0.2rem" textAnchor="middle" className="skills-text-prog">80%</text>
-
-                   </svg>
                 
+                   <div className="circleBigBox">
+                        <div className="outer">
+                            <div className="inner">
+                                <div id="number" className="number">
+                                    77%
+                                </div>
+                            </div>
+
+                        <svg  xmlns="http://www.w3.org/2000/svg" version="1.1" height="160px" width="160px" className="svgcricl" >
+                            <defs>
+                                <linearGradient id="gradient">
+                                    <stop  offset="0%" stop-color="rgb(255, 163, 107)" />
+                                    <stop  offset="100%" stop-color="rgb(248, 163, 208)" />
+                                </linearGradient>
+                            </defs>
+                            {/* <circle  className="circlSkills" cx="70" cy="70" r="60" stroke="flex" stroke-width="15" /> */}
+                            <circle className="progcirclSkills" cx="70" cy="70" r="60" strokeLinecap="round" />
+                            </svg>
+                            {/* <text x="0%" y="50%" dy="0rem" textAnchor="middle" className="skills-text-prog"  >Js dev</text> */}
+
+                        
+                        </div> { /**end outer*/}
+                        <text  textAnchor="middle" className="skills-text-prog" > Web Devoloper</text>
+                    </div>
+                    
+
+
+                {/*  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512" className="arro" >
+                        <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                    </svg> */}
+
                 
                 </div>  {/** end skills-btm */}
 
             </div>  {/** end skills-container */}
         
-        </div>
+        </div> 
     )
 
 }
