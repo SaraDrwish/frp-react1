@@ -1205,24 +1205,34 @@ width: 44%;
   z-index: 11;
   width: 100%;
   height: 40vh;
-  background-color: rgb(213, 151, 70);
+  /* background-color: rgb(213, 151, 70); */
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 11% 0;
-
+  /* justify-content: center; */
+  /* align-items: center; */
+  margin: 8% 0;
+  padding: 8% 2%;
 }
+
 .homeContent .right-homCont .starImg {
-  width: 6rem;
-  height: 6rem;
-  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  position: relative;
   top: 0%;
   z-index: 1;
-  background-color: yellowgreen;
+   /* background-color: yellowgreen; */
   animation-name: star-anmation;
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-direction: alternate-reverse;
+}
+.homeContent .right-homCont img{
+  /* width: 2rem;
+  height: 2rem; */
+  /* background-color: rgb(115, 161, 161); */
+  position: absolute;
+  /* padding: 4% 0; */
+ 
+  
 }
 @keyframes star-anmation {
   0% {
@@ -1249,6 +1259,23 @@ width: 44%;
   flex-direction: column;
   overflow: hidden;
 }
+.skills .skills-container .circleBigBox{
+margin: auto 20%;
+}
+.skills .skills-container .skills-btm .arro:nth-child(1){
+display: flex;
+  position: absolute;
+left: 0;
+align-items: center;
+  justify-content: center;
+}
+.skills .skills-container .skills-btm .arro:nth-child(2){
+  display: flex;
+  position: absolute;
+  right: 0;
+  align-items: center;
+  justify-content: center;
+}
 .skills .skills-btm {
   /* flex-direction: column; */
   align-items: center;
@@ -1264,6 +1291,9 @@ width: 44%;
 
 
 /* --------------------media projects  */
+.Projects{
+  padding: 20% 0;
+}
 .Projects h2{
   font-size: 2.6rem;
   padding: 2% 0;
