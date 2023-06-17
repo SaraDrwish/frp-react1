@@ -429,8 +429,8 @@ gap: 1rem;
   position: relative;
   left: 0;
   right: 0;
-  height: 100%;
-  margin-bottom: 16%;
+  height: 50vh;
+  /* margin-bottom: 16%; */
 }
 .skills .skills-container h2{
   font-size: 3rem;
@@ -607,10 +607,11 @@ background-color: blue;
 display: flex;
 flex-direction: column;
 align-items: center;
-padding: 1%;
-margin: 22% 0% 0 0;
+padding: 4% 1%;
+/* margin: 11% 0% 0 0; */
 /* background-color: var(--color7verylightpink); */
-  background-color: var(--color8verylightorng);}
+  background-color: var(--color8verylightorng);
+}
 .Projects h2 { 
 padding: 1%;
  }
@@ -1203,6 +1204,13 @@ width: 44%;
   position: relative;
   z-index: 11;
   width: 100%;
+  height: 40vh;
+  background-color: rgb(213, 151, 70);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 11% 0;
+
 }
 .homeContent .right-homCont .starImg {
   width: 6rem;
@@ -1210,6 +1218,7 @@ width: 44%;
   position: absolute;
   top: 0%;
   z-index: 1;
+  background-color: yellowgreen;
   animation-name: star-anmation;
   animation-duration: 3s;
   animation-iteration-count: infinite;
@@ -1227,6 +1236,61 @@ width: 44%;
 }
 
 /* -----------------------media ------------------------- */
+
+
+
+/* ----------------------------skills media start  */
+
+.skills{
+  flex-direction: column;
+}
+.skills .skills-container {
+  top: 11rem;
+  flex-direction: column;
+  overflow: hidden;
+}
+.skills .skills-btm {
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+ }
+
+
+
+
+ /* ----------------------------skills media end  */
+
+
+
+/* --------------------media projects  */
+.Projects h2{
+  font-size: 2.6rem;
+  padding: 2% 0;
+}
+
+.ReactProject-contaner {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+   align-items: center;
+}
+.ReactProject-contaner .box {
+  width: 100%;
+}
+.Projects .projsNav{
+  /* font-size: small; */
+  margin: 4% 0;
+}
+.Projects .projsNav a{
+  font-size: small;
+  padding: 1.4rem;
+}
+
+
+
+/* -----------------------end media projects  */
+
 
 
 
