@@ -35,7 +35,7 @@ function App() {
                         </Route> */}
           
                          {/* <Route path="*" element={<h2> the page is not found  </h2>} />  */}
-                        <Route path="/" element={ <h2>Main Bage</h2>}  /> 
+                        {/* <Route path="/" element={ <h2>Main Bage</h2>}  />  */}
                   </Routes>
         
                 {/* </BrowserRouter> */}

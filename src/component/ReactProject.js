@@ -36,7 +36,8 @@ function ReactProject() {
             <div className='img-box'>
               <img src={img1proj} alt='img1' />
             </div>
-            <div className='box-text'>
+          <div className='box-text'>
+              <div className='overTheText'></div>
               <h3> box</h3>
               <span> Development </span>
               <button>visit</button>
@@ -52,7 +53,8 @@ function ReactProject() {
             <div className='img-box'>
               <img src={img1proj} alt='img1' />
             </div>
-            <div className='box-text'>
+          <div className='box-text'>
+              <div className='overTheText'></div>
               <h3> box</h3>
               <span> Development </span>
               <button>visit</button>
@@ -68,7 +70,8 @@ function ReactProject() {
             <div className='img-box'>
               <img src={img1proj} alt='img1' />
             </div>
-            <div className='box-text'>
+          <div className='box-text'>
+               <div className='overTheText'></div>
               <h3> box</h3>
               <span> Development </span>
               <button>visit</button>
@@ -84,7 +87,8 @@ function ReactProject() {
             <div className='img-box'>
               <img src={img1proj} alt='img1' />
             </div>
-            <div className='box-text'>
+          <div className='box-text'>
+             <div className='overTheText'></div>
               <h3> box</h3>
               <span> Development </span>
               <button>visit</button>
@@ -100,7 +104,8 @@ function ReactProject() {
             <div className='img-box'>
               <img src={img1proj} alt='img1' />
             </div>
-            <div className='box-text'>
+          <div className='box-text'>
+              <div className='overTheText'></div>
               <h3> box</h3>
               <span> Development </span>
               <button>visit</button>

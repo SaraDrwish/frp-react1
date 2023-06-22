@@ -65,7 +65,7 @@ const Contact = () => {
                             <Form.Control as="textarea" rows={3} />
                         </Form.Group>
                          {/* <Link to="/src/component/Contact.js" > */}
-                            <Button className="btn my-3" type="submit" style={ {color:"rgb(102, 76, 60)"} }> </Button>
+                            <Button className="my-3"  value="submit"  type="submit"  >Send</Button>
                           {/* </Link> */}
                     </Form>
                 {/* </Container> */}

@@ -345,23 +345,28 @@ gap: 1rem;
   cursor: pointer;
  }
 .homeContent .left-homCont button .svg{
-  display: flex;
-  /* border: 2px solid var(--color2otng); */
-  border: 2px solid var(--color1pink);
-  border-radius: 5rem;
-  padding: 0.25rem;
-  -webkit-border-radius: 5rem;
-  -moz-border-radius: 5rem;
-  -ms-border-radius: 5rem;
-  -o-border-radius: 5rem;
-  /* fill: var(--color2otng); */
-  fill: var(--color1pink);
-  cursor: pointer;
-  transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
+    display: flex;
+    /*border: 2px solid var(--color2otng);
+    */border: 2px solid var(--color1pink);
+    border-radius: 5rem;
+    padding: 0.25rem;
+    -webkit-border-radius: 5rem;
+    -moz-border-radius: 5rem;
+    -ms-border-radius: 5rem;
+    -o-border-radius: 5rem;
+    /*fill: var(--color2otng);
+    */fill: var(--color1pink);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transform: translateX(0rem);
+    -webkit-transform: translateX(0rem);
+    -moz-transform: translateX(0rem);
+    -ms-transform: translateX(0rem);
+    -o-transform: translateX(0rem);
 }
 
  .homeContent .left-homCont button:hover span,
@@ -370,7 +375,13 @@ gap: 1rem;
    border-color: var(--color1pink);
    fill: var(--color3pinklight);
  }
-
+.homeContent .left-homCont button:hover .svg{
+  transform: translateX(0.4rem);
+  -webkit-transform: translateX(0.4rem);
+  -moz-transform: translateX(0.4rem);
+  -ms-transform: translateX(0.4rem);
+  -o-transform: translateX(0.4rem);
+}
 /* .homeContent .left-homCont button .svg:hover{
   border-color: var(--color1pink);
   fill: var(--color1pink);
@@ -430,7 +441,7 @@ gap: 1rem;
   left: 0;
   right: 0;
   height: 50vh;
-  /* margin-bottom: 16%; */
+  padding-top: 20%;
 }
 .skills .skills-container h2{
   font-size: 3rem;
@@ -476,17 +487,41 @@ gap: 1rem;
   justify-content: space-between;
   align-items: center;
   position: relative;
+  /* background-color: aqua; */
 }
+
+
+.skills .swiper{
+  width: 70%;
+  height: 12rem;
+  position: unset;
+}
+.skills .swiper-slide{
+  /* background: var(--color2otng); */
+  display: flex;
+  padding: 1rem;
+  box-sizing: border-box;
+  overflow: visible !important;
+  position: relative;
+}
+.skills .swiper-button-prev , .skills .swiper-button-next{
+  color: var(--color1pink);
+  fill: var(--color1pink);
+}
+
 .skills .skills-btm .circleBigBox{
   display: flex;
   flex-direction: column;
+  width: 90%;
+  margin: auto;
+  /* background-color: yellowgreen; */
 }
 .skills .skills-btm .circleBigBox text {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   text-align: center;
   text-transform: capitalize;
   font-weight: 500;
-  padding: 6% 0%;
+  padding: 4% 0%;
 }
 .skills .skills-btm .outer{
   display: flex;
@@ -730,6 +765,8 @@ padding: 1%;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
+  color: var(--color6pinkdark);
+  font-weight: bold;
 }
 .ReactProject-contaner .box .overTheText {
   /*content: "";
@@ -752,7 +789,7 @@ padding: 1%;
 .ReactProject-contaner .box:hover .overTheText{
     /* top: 0%; */
     transform: translateY(100);
-    background-color: rgba(255, 181, 43, 0.81) ;
+    background-color: rgba(255, 222, 160, 0.71) ;
     -webkit-transform: translateY(100);
     -moz-transform: translateY(100);
     -ms-transform: translateY(100);
@@ -915,16 +952,16 @@ margin: 0;
   text-transform: capitalize;
   opacity: 88%;
 }
- .contact .top-form .right-top-cont form button{
-      width: 9rem;
-      height: 3rem;
+ .contact .top-form .right-top-cont form .btn{
+      width: 11rem;
+      height: 3.5rem;
       border: none;
       outline: none;
       border-radius: 1.2rem;
       text-transform: capitalize;
       font-weight: 500;
       cursor: pointer;
-      color: var(--color6pinkdark);
+      color: var(--color6pinkdark) !important;
       background-color: var(--color1pink);
       -webkit-border-radius: 1.2rem;
       -moz-border-radius: 1.2rem;
