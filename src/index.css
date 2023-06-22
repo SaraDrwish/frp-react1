@@ -483,7 +483,7 @@ gap: 1rem;
   background-color: var(--color6pinkdark);
     display: flex;
   width: 88%;
-  padding: 2%;
+  padding: 1%;
   justify-content: space-between;
   align-items: center;
   position: relative;
@@ -497,14 +497,14 @@ gap: 1rem;
   position: unset;
 }
 .skills .swiper-slide{
-  /*background: var(--color2otng);
-  */display: flex;
-  padding: 1rem;
+  /* background: var(--color2otng); */
+  display: flex;
+  /* padding: 1rem; */
   box-sizing: border-box;
   overflow: hidden;
   /* border-radius: 1rem; */
-  /*overflow: visible !important;
-  */position: relative;
+  /*overflow: visible !important;*/
+  position: relative;
    
 }
 .skills .swiper-button-prev , .skills .swiper-button-next{
@@ -1304,17 +1304,17 @@ width: 44%;
 .skills .skills-container {
   top: 11rem;
   flex-direction: column;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .skills .skills-container .circleBigBox{
 margin: auto 20%;
 }
 .skills .skills-container .skills-btm .arro:nth-child(1){
 display: flex;
-  position: absolute;
+position: absolute;
 left: 0;
 align-items: center;
-  justify-content: center;
+justify-content: center;
 }
 .skills .skills-container .skills-btm .arro:nth-child(2){
   display: flex;
@@ -1328,6 +1328,20 @@ align-items: center;
   align-items: center;
   justify-content: center;
   text-align: center;
+ }
+ .swiper {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+}
+   .swiper-slide{
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 100% !important;
+   padding: 0;
+   margin: auto;
  }
 
 
