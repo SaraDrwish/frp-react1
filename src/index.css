@@ -708,10 +708,7 @@ align-items: center;
 padding: 2%;
 /* height: 100vh; */
 width: 100%;
-/* background-color: var(--color9pinkdark); */
 background-color: var(--color6pinkdark);
-/* color: var(--color6pinkdark); */
-/* color: var(--color5orngdark); */
 color: var(--color1pink);
 }
 .projects h2 { 
@@ -719,11 +716,12 @@ padding: 1%;
 font-size: 3rem;
  }
 .projects .projsNav { 
-      margin: 2% auto;
+      margin: 1% auto;
       display: flex;
        width: 55%;
-        justify-content: space-evenly;
+        justify-content: center;
         /* align-items: center; */
+        text-align: center !important;
         border-radius: 5rem;
         -webkit-border-radius: 5rem;
         -moz-border-radius: 5rem;
@@ -731,46 +729,22 @@ font-size: 3rem;
         -o-border-radius: 5rem;
         color: var(--color4ornglight);
         font-weight: bold;
-        /* border: none; */
-        border: 1px solid var(--color2otng);
-        padding: 0.5%;
-        background-color: var(--color7verylightpink);
+        border: none;
+        /* border: 1px solid var(--color2otng); */
+        /* padding: 0.5%; */
+        /* background-color: var(--color7verylightpink); */
   }
-.projects .projsNav a{
+  
+
+.projects a{
    text-decoration: none;
     font-size: 1.2rem;
     text-transform: capitalize;
-    /* background-color: var(--color6pinkdark); */
-    background-color: var(--color7verylightpink);
+    /* background-color: var(--color7verylightpink); */
     padding: 1% 6%;
     color: var(--color2otng);
     border: 1px solid var(--color2otng);
 }
-.projsNav >a:nth-child(1) {
-  /* background-color: rgb(152, 182, 208); */
-  border-radius: 5rem 0 0 5rem;
-  -webkit-border-radius: 5rem 0 0 5rem;
-  -moz-border-radius: 5rem 0 0 5rem;
-  -ms-border-radius: 5rem 0 0 5rem;
-  -o-border-radius: 5rem 0 0 5rem;
-}
-/* .projsNav>a:nth-child(1):hover{
-   background-image: linear-gradient(to right , var(--color1pink),  var(--color2otng) );
-  color: var(--color5orngdark);
- } */
-.projsNav>a:hover {
-  /* background-image: radial-gradient(rgb(202, 137, 137), rgb(232, 232, 162), rgb(127, 171, 166)); */
-  background-image: linear-gradient(to right, var(--color1pink), var(--color2otng));
-  color: var(--color5orngdark);
-}
- .projsNav>a:nth-child(3){
-   /* background-color: rgb(32, 45, 57); */
-   border-radius: 5rem 0 0 5rem;
-   -webkit-border-radius: 0rem 5rem 5rem 0rem;
-   -moz-border-radius: 5rem 0 0 5rem;
-   -ms-border-radius: 5rem 0 0 5rem;
-   -o-border-radius: 5rem 0 0 5rem;
- }
 
 .nav-content-projects-links {
   display: flex;
@@ -782,7 +756,6 @@ font-size: 3rem;
   width: 100%;
   /* background-color: var(--color1pink); */
   }
-
 
 .projslink{
   cursor: pointer;
@@ -798,137 +771,130 @@ font-size: 3rem;
   flex-direction: column;
   cursor: pointer;
 }
+
+ .projects .projsNav li {
+   text-align: center !important;
+   border: 1px solid var(--color2otng);
+   width: 33%;
+   /*margin: auto;
+   */position: relative;
+   left: 0;
+   background-color: var(--color7verylightpink);
+   transition: all 0.3s ease;
+   -webkit-transition: all 0.3s ease;
+   -moz-transition: all 0.3s ease;
+   -ms-transition: all 0.3s ease;
+   -o-transition: all 0.3s ease;
+   cursor: pointer;
+   /* z-index: -1; */
+}
  
+  
+    /* .projects ul li:hover::before{
+    width: 100%;
+    left: 0;
+}
+  */
 .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active {
-background-image: linear-gradient(to right, var(--color1pink), var(--color2otng));
-  color: var(--color5orngdark);
-border: none ;
+    /* background-image: linear-gradient(to right, var(--color1pink), var(--color2otng) ) ; */
+    background-color: unset !important;
+    border: none !important ;
+    text-decoration: none;
+    font-size: 1.2rem;
+    /* cursor: pointer; */
+    text-transform: capitalize;
+    color: var(--color4ornglight) !important ;
+    margin: 2%;
+    /* border-radius: 5rem;
+    -webkit-border-radius: 5rem;
+    -moz-border-radius: 5rem;
+    -ms-border-radius: 5rem;
+    -o-border-radius: 5rem; */
+
+    /* width: 100%; */
+}
+ .nav-tabs .nav-link::before {
+      position: absolute;
+      content: "";
+      left: 0%;
+      top: 0%;
+      width: 0%;
+      height: 100%;
+      background-image: linear-gradient(to right, var(--color1pink), var(--color2otng));
+      color: var(--color3pinklight) !important;
+      /* z-index: 1; */
+      cursor: pointer;
+      transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+    }
+  .nav-tabs .nav-link.active::before{
+width: 100%;
  }
+     .nav-tabs .nav-link::before:nth-child(1){
+       border-radius: 5rem 0rem 0rem 5rem  ;
+        -webkit-border-radius: 5rem 0rem 0rem 5rem  ; -moz-border-radius: 5rem 0rem 0rem 5rem  ; -ms-border-radius: 5rem 0rem 0rem 5rem  ; -o-border-radius: 5rem 0rem 0rem 5rem  ;
+}
+.nav-tabs .nav-link::before:nth-child(2){
+        border-radius: 0rem ;
+        -webkit-border-radius: 0rem ;
+        -moz-border-radius: 0rem ;
+        -ms-border-radius: 0rem ;
+        -o-border-radius: 0rem ;
+}
+.nav-tabs .nav-link::before:nth-child(3){
+   border-radius: 0rem 5rem 5rem 0rem !important ;
+   -webkit-border-radius: 0rem 5rem 5rem 0rem !important ;
+   -moz-border-radius: 0rem 5rem 5rem 0rem !important ;
+   -ms-border-radius: 0rem 5rem 5rem 0rem !important ;
+   -o-border-radius: 0rem 5rem 5rem 0rem !important ;
+}
 .nav-tabs .nav-link:focus,
 .nav-tabs .nav-link:hover ,.nav-tabs .nav-link{
-    border: none !important;
+    border: none !important ;
     text-decoration: none;
     font-size: 1.2rem;
     text-transform: capitalize;
-    color: var(--color2otng) ;
-    border: 1px solid var(--color2otng);
-    margin: 2%;
-    border-radius: 4rem;
-    -webkit-border-radius: 4rem;
-    -moz-border-radius: 4rem;
-    -ms-border-radius: 4rem;
-    -o-border-radius: 4rem;
-}
-.nav-tabs .nav-item.show .nav-link,
-.nav-tabs .nav-link.active{
-  border: none !important;
-    text-decoration: none;
-    font-size: 1.2rem;
-    text-transform: capitalize;
-    color: var(--color2otng);
-    border: 1px solid var(--color2otng);
-    margin: 2%;
-    border-radius: 4rem;
-    -webkit-border-radius: 4rem;
-    -moz-border-radius: 4rem;
-    -ms-border-radius: 4rem;
-    -o-border-radius: 4rem;
-    width: 100%;
+    color: var(--color2otng)  ;
+     margin: 2%;
+     background-color: unset;
 }
 
-/* 
-
-.accordion{
-  background-color: var(--color9pinkdark);
-  border: none !important;
-
+           .nav-item:nth-child(1) {
+              border-radius: 5rem 0rem 0rem 5rem;
+              -webkit-border-radius: 5rem 0rem 0rem 5rem;
+              -moz-border-radius: 5rem 0rem 0rem 5rem;
+              -ms-border-radius: 5rem 0rem 0rem 5rem;
+              -o-border-radius: 5rem 0rem 0rem 5rem;
+            }
+      
+            .nav-item:nth-child(3) {
+              border-radius: 0rem 5rem 5rem 0rem;
+              -webkit-border-radius: 0rem 5rem 5rem 0rem;
+              -moz-border-radius: 0rem 5rem 5rem 0rem;
+              -ms-border-radius: 0rem 5rem 5rem 0rem;
+              -o-border-radius: 0rem 5rem 5rem 0rem;
 }
-.accordion button{
-  border: none;
-}
-.accordion-item .accordion-button.collapsed  , .accordion-button.collapsed:focus{
-background: var(--color9pinkdark);
-  color: var(--color2otng);
-  border: none !important;
-  outline: none;
-   text-transform: capitalize;
-  width: 100%;
-  margin: auto;
- }
- .accordion-header {
-  margin: 0;
-  background: var(--color9pinkdark);
-  color: var(--color2otng);
-  border: none !important;
-  outline: none;
-  border-radius: 4rem;
-  -webkit-border-radius: 4rem;
-  -moz-border-radius: 4rem;
-  -ms-border-radius: 4rem;
-  -o-border-radius: 4rem;
-}
- .accordion-button , .accordion-button button {
-  margin: 0;
-  padding: 0;
-  background: var(--color9pinkdark) !important;
-   color: var(--color2otng) !important;
-    border: none !important;
-  border-radius: 4rem;
-    -webkit-border-radius: 4rem;
-    -moz-border-radius: 4rem;
-    -ms-border-radius: 4rem;
-    -o-border-radius: 4rem;
-    text-transform: capitalize;
- }
-.accordion-header{
-margin: 0;
-padding: 0;
-background: var(--color9pinkdark);
-    border: none !important;
-   }
- .accordion-header button{
-  border: none;
-  background-color: var(--color9pinkdark);
- }
-.accordion-body{
-margin: 0;
-  padding: 0;
-  background: var(--color9pinkdark);
-  border: none;
-}
-
-.accordion-item{
-    margin: 0;
-    padding: 0;
-    background: var(--color9pinkdark) !important;
-    border: none;
-    border-radius:4rem ;
-    -webkit-border-radius:4rem ;
-    -moz-border-radius:4rem ;
-    -ms-border-radius:4rem ;
-    -o-border-radius:4rem ;
-} */
-
 
 .plankkjsProjs{
   width: 100%;
   /* height: 44vh; */
   /* background-color: rgb(159, 129, 90); */
 }
-
 .PasicProject{
   width: 100%;
     /* height: 22vh; */
     /* background-color: rgb(204, 128, 28); */
-    padding: 1%;
+    /* padding: 1%; */
+    margin: 3%;
 }
- 
 .ReactProject{
   width: 90%;
   background: linear-gradient( to right , var(--color3pinklight) , var(--color1pink) , var(--color2otng) , var(--color4ornglight)  );
-  /*background-color: var(--color2otng);
-  */text-align: center;
+  text-align: center;
   display: flex;
   margin: 2% auto;
   justify-content: center;
@@ -938,18 +904,14 @@ margin: 0;
   -moz-border-radius: 2rem;
   -ms-border-radius: 2rem;
   -o-border-radius: 2rem;
-
 }
 .ReactProject-contaner{
   display: flex;
   flex-wrap: wrap;
-  /* width: 100%; */
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
   text-align: center;
-  /* background-color: var(--color5orngdark); */
-  /* padding: 4%; */
   margin: 4% 2%;
 }
 
@@ -997,6 +959,7 @@ margin: 0;
   color: var(--color6pinkdark);
   font-weight: bold;
 }
+
 .ReactProject-contaner .box .overTheText {
   /*content: "";
   */position: absolute;
@@ -1081,10 +1044,6 @@ width: 100%;
 .ReactProject-contaner .box button:hover {
   background: linear-gradient(to left, var(--color1pink), var(--color2otng));
 }
-
-
-
-
 
 
 
@@ -1568,7 +1527,9 @@ justify-content: center;
   font-size: 2.6rem;
   padding: 2% 0;
 }
-
+.projects .projsNav {
+width: unset;
+}
 .ReactProject-contaner {
   display: flex;
   flex-wrap: wrap;
