@@ -5,7 +5,7 @@ import { Link , Outlet} from "react-router-dom";
 function PasicProject() {
   return (
     <div className='PasicProject' id='PasicProject'>
-      <h2>HTML & CSS ProJects</h2>
+      <h2>looooveee  HTML & CSS ProJects</h2>
                   {/* <Outlet/> */}
 
     </div>
